@@ -112,7 +112,7 @@
           width: calc(100% - 40px);
           height: calc(100% - 40px);
           display: block;
-          overflow: scroll;
+          overflow: auto;
           tab-size: 2;
           pre {
             margin-top: 0;
@@ -151,14 +151,14 @@
         .previewuiinner {
           height: 100%;
           border-radius: 10px;
-          overflow-y: scroll;
+          overflow-y: auto;
           .row {
             border-left: 2px solid @text-color;
             padding-left: 10px;
             line-height: 1.5;
             display: block;
             line-break: none;
-            overflow-x: scroll;
+            overflow-x: auto;
             white-space: nowrap;
             .label {
               color: lighten(@text-color, 40%);
