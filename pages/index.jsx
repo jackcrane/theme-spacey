@@ -3,15 +3,17 @@ import Link from "next/link";
 import Header from "../components/header";
 import styles from "../assets/styles/index.module.less";
 import Nav from "../components/nav";
-import Features from "../components/features";
+import Projects from "../components/Projects";
 import Contact from "../components/contact";
+import Skills from "../components/skills";
 
 export default function Home() {
   return (
     <>
       <Nav />
       <Header />
-      <Features />
+      <Projects />
+      <Skills />
       <Contact />
     </>
   );

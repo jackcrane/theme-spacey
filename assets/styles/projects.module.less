@@ -1,0 +1,118 @@
+@import "variables";
+
+.projects {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 10px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    max-width: 600px;
+  }
+  .feature {
+    &::before {
+      content: "";
+      display: block;
+      width: 75px;
+      height: 8px;
+      background-color: @text-color;
+    }
+  }
+  h1 {
+    font-family: @heading-font;
+    font-size: 50px;
+    margin: 0;
+  }
+  p {
+    font-family: @body-font;
+    font-size: 20px;
+  }
+  .project {
+    border: 2px solid @text-color;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 25px;
+    .text {
+      flex-grow: 1;
+      .subtitle {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      h2 {
+        font-family: @heading-font;
+        font-size: 24px;
+        margin: 0;
+        border: 2px solid @text-color;
+        border-radius: 10px;
+        padding: 10px;
+        display: inline-block;
+      }
+      .stack {
+        img {
+          margin: 0 5px;
+        }
+      }
+      .links {
+        margin-top: 1em;
+        a {
+          color: @text-color;
+          text-decoration: underline;
+          letter-spacing: 1px;
+          padding: 5px 10px;
+          display: inline-block;
+          transition: color 0.2s, background-color 0.2s;
+          margin-right: 5px;
+          &:hover {
+            color: @background-color;
+            background-color: @text-color;
+          }
+        }
+      }
+    }
+    .image {
+      display: flex;
+      align-items: center;
+      .screenshot {
+        height: 200px;
+        transition: transform 0.2s;
+        --scale-value: 1.25;
+        --xtrans-value: -25px;
+        @media screen and (max-width: 700px) {
+          margin: 0 auto;
+          --scale-value: 2.25;
+          --xtrans-value: 0px;
+        }
+        @media screen and (max-width: 600px) {
+          --scale-value: 2;
+        }
+        @media screen and (max-width: 525px) {
+          --scale-value: 1.75;
+        }
+        @media screen and (max-width: 470px) {
+          --scale-value: 1.5;
+        }
+        @media screen and (max-width: 400px) {
+          --scale-value: 1.25;
+        }
+        @media screen and (max-width: 350px) {
+          --scale-value: 1;
+        }
+        &:hover {
+          transform: scale(var(--scale-value))
+            translate(var(--xtrans-value), 0px);
+        }
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 700px) {
+      flex-direction: column-reverse;
+    }
+    font-family: @body-font;
+    font-size: 20px;
+  }
+}

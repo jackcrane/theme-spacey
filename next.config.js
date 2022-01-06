@@ -4,4 +4,7 @@ module.exports = withLess({
   lessLoaderOptions: {
     /* ... */
   },
+  images: {
+    domains: ["unpkg.com"],
+  },
 });

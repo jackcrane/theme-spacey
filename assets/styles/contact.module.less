@@ -1,15 +1,24 @@
 @import "variables";
 
-.contact {
+.contacts {
   padding-top: 75px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   max-width: 1200px;
+  gap: 10px;
   @media screen and (max-width: 800px) {
     flex-direction: column;
     max-width: 600px;
+  }
+  .feature {
+    &::before {
+      content: "";
+      display: block;
+      width: 75px;
+      height: 8px;
+      background-color: @text-color;
+    }
   }
   h1 {
     font-family: @heading-font;
@@ -19,5 +28,40 @@
   p {
     font-family: @body-font;
     font-size: 20px;
+  }
+  .contactsList {
+    .contact {
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 20px;
+      margin: 5px;
+      transition: 0.2s;
+      a {
+        color: @text-color;
+      }
+      &:hover {
+        background-color: @text-color;
+        color: @background-color;
+        a {
+          color: @background-color;
+        }
+        img {
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+            brightness(100%) contrast(100%);
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        p {
+          display: inline-block;
+          margin: 0;
+          font-size: 24px;
+        }
+      }
+    }
   }
 }

@@ -40,18 +40,17 @@ export default function Header() {
       <main className={styles.text}>
         <div>
           <Typing speed={25}>
-            <h1 className={styles.main}>Spacey data for spacey companies</h1>
+            <h1 className={styles.main}>Jack Crane</h1>
           </Typing>
           <p className={styles.sub}>
-            Enrich your experiences with data from the the spaceflight
-            community.
+            Student, athlete, programmer, and proud robot nerd!
           </p>
           <div className={styles.cta}>
             <div className={styles.start}>
-              <Link href="/">Get started</Link>
+              <Link href="/">About me</Link>
             </div>
             <div className={styles.pitch}>
-              <Link href="/">Watch our pitch video</Link>
+              <Link href="/">Skillset</Link>
             </div>
           </div>
         </div>
@@ -70,57 +69,53 @@ export default function Header() {
           <div className={styles.previewui}>
             <div className={styles.previewuiinner} ref={uip}>
               <div className={styles.input}>
-                <Typing startDelay={500}>Saturn V</Typing>‎
+                <Typing startDelay={500}>Jack Crane</Typing>‎
               </div>
               <Typing startDelay={1200} speed={10}>
                 <div className={styles.row}>
                   <td className={styles.label}>Name</td>
-                  <td>Saturn V</td>
+                  <td>Jack Crane</td>
                 </div>
                 <div className={styles.row}>
-                  <td className={styles.label}>Manufacturer</td>
-                  <td>NASA</td>
+                  <td className={styles.label}>Home</td>
+                  <td>Cincinnati, Ohio, United States</td>
                 </div>
                 <div className={styles.row}>
-                  <td className={styles.label}>Origin</td>
-                  <td>🇺🇸 United States</td>
+                  <td className={styles.label}>Age</td>
+                  <td>18</td>
                 </div>
                 <div className={styles.row}>
-                  <td className={styles.label}>Mission</td>
-                  <td>Moon Landing</td>
-                </div>
-                <div className={styles.row}>
-                  <td className={styles.label}>First Launch</td>
-                  <td>May 5, 1966</td>
-                </div>
-                <div className={styles.row}>
-                  <td className={styles.label}>Price</td>
-                  <td>Development: $6.417b, Per launch: $185m</td>
-                </div>
-                <div className={styles.row}>
-                  <td className={styles.label}>Missions</td>
+                  <td className={styles.label}>Education</td>
                   <td>
-                    Apollo 4<br />
-                    Apollo 6<br />
-                    Apollo 5<br />
-                    Apollo 7<br />
-                    Apollo 8<br />
-                    Apollo 9<br />
-                    Apollo 10
+                    High School at Summit Country Day School
                     <br />
-                    Apollo 11
+                    Flight Training at First Flight Aviation & Lunken Flight
+                    Training Center
                     <br />
-                    Apollo 12
+                  </td>
+                </div>
+                <div className={styles.row}>
+                  <td className={styles.label}>Dreams</td>
+                  <td>
+                    Fly F-16s in the air force
                     <br />
-                    Apollo 13
+                    Become an engineer at a cutting-edge company
                     <br />
-                    Apollo 14
+                    Start a business
+                  </td>
+                </div>
+                <div className={styles.row}>
+                  <td className={styles.label}>Passions</td>
+                  <td>
+                    Programming
                     <br />
-                    Apollo 15
+                    Robotics
                     <br />
-                    Apollo 16
+                    Aviation
                     <br />
-                    Apollo 17
+                    Building
+                    <br />
+                    Learning
                   </td>
                 </div>
               </Typing>

@@ -21,31 +21,20 @@ export default function Header() {
   return (
     <nav className={styles.nav}>
       <ul ref={menu}>
-        <li class={styles.home}>
+        <li className={styles.home}>
           <div className={styles.logo}></div>
           <Link href="/">Home</Link>
         </li>
         <div className={styles.mainlist}>
           <li>
-            <Link href="/features">Features</Link>
+            <Link href="#projects">Projects</Link>
           </li>
           <li className={styles.usecases}>
-            <Link href="#" className={styles.usecases__trigger}>
-              Use cases ↓
-            </Link>
-            <div className={styles.usecases__content}>
-              <Link href="/usecases/sales">Sales</Link>
-              <Link href="/usecases/marketing">Marketing</Link>
-              <Link href="/usecases/finance">Finance</Link>
-              <Link href="/usecases/hr">HR</Link>
-            </div>
-          </li>
-          <li>
-            <Link href="/pricing">Pricing</Link>
+            <Link href="#skills">Skill Set</Link>
           </li>
         </div>
         <li className={styles.cta}>
-          <Link href="/contact">Get started 🚀</Link>
+          <Link href="#contact">Contact me 🚀</Link>
         </li>
       </ul>
       <div
